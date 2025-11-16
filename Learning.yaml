@@ -1,0 +1,14 @@
+likes: &baseLikes
+  - Eclairs
+  - Cheese cake
+  - Hot chocolate
+  - 2nd Wife Perfume
+Dislikes: &basDislikes
+ - Anger management
+ - Smelly feet
+ - Bad Wifi
+
+people:
+  Name: Jahedul
+  <<: baseLikes
+  <<: basDislikes
