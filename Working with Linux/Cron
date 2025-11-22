@@ -14,7 +14,4 @@ Example of cron syntax:
 
 0 2 * * * /usr/local/bin/backup.sh
 
-
-^
-
-Run backup.sh at 02:00 every day
+# Run backup.sh at 02:00 every day
