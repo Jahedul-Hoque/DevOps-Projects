@@ -1,0 +1,10 @@
+OpenSSH is a secure way of remoting onto a linux endpoint.
+
+It's done with private and public keys.
+
+Private Key: Sits on the .ssh folder of the machine you're connecting from
+Public Key: Sits on the authorised_key directory of a linux end point
+Authentication is only successful with SSH when both keys match.
+
+SSH have encrypted tunnels that allow for a secure connection between 2 endpoints.
+SSH Connection is typically sat on port 22
