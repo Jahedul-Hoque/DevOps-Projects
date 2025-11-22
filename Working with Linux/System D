@@ -2,33 +2,21 @@ SystemD is the service manager responsible for booting the system, managing and 
 
 
 Core commands:
-
 Systemctl status <service>        (checks service status) 
-
 Systemctl start <service>         (starts service) 
-
 Systemctl stop <service>          (stops service) 
-
 Systemctl restart <service>       (restarts service) 
-
 systemctl enable <service>        (enables service on boot) 
-
 systemctl disable <service>       (disables service on boot) 
-
 systemctl daemon-reload           (tells systemd to read new unit files/service) 
 
 A systemD unit file describes how a service is run 
-
 Dependancies: Required (HARD) Wants (Soft) After (Ordering) 
 
+
 SystemD has many unit types like: 
-
 .service    (Managed by Daemon) 
-
 .target		(Boot stages) 
-
 .timer		(Scheduled tasks) 
-
 .mount		(Filesystem mountpoint) 
-
 .socket		(Networking) 
