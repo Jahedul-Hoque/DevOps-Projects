@@ -1,0 +1,15 @@
+Systemd timers are the equivalent to cron but better.
+
+Systemd timer lives in /etc/systemd/system/example.timer
+
+Benefits of Systemd Timer:
+
+    - Logging with Journald
+    - Dependancy Handling
+    - Service Supervision
+    - Resource limits (CPU, Memory)
+    - Restart limits
+    - Extremely reliable
+
+What does the systemd timer do? It defines what the triggers for the service is, whether it should be persistent, how often and when it should be run.
+
