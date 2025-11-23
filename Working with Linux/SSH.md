@@ -1,4 +1,4 @@
-# OpenSSH -- A Complete Overview
+# OpenSSH - A Complete Overview
 
 This document explains what OpenSSH is, how SSH authentication works,
 and how keys, known hosts and encrypted tunnels all fit together. It is
