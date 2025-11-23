@@ -6,5 +6,8 @@ Private Key: Sits on the .ssh folder of the machine you're connecting from
 Public Key: Sits on the authorised_key directory of a linux end point
 Authentication is only successful with SSH when both keys match.
 
+Public keys usually start with: "ssh-rsa ABCDEFKJASHDKJ..." or "ssh-ed25519 ASDNBJCBJSHSADAS"
+You can typically find them on the .shh directory of the SSH Client you're remoting on from or from your ..ssh folder on your linux machine.
+
 SSH have encrypted tunnels that allow for a secure connection between 2 endpoints.
 SSH Connection is typically sat on port 22
