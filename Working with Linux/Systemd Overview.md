@@ -9,7 +9,7 @@ unit types.
 
 ------------------------------------------------------------------------
  
-## 1. What systemd Does
+## 1. What systemd does
 
 systemd is responsible for:
 
