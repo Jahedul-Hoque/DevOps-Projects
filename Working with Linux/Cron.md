@@ -1,4 +1,4 @@
-# Cron -- Traditional Linux Scheduler
+# Cron - Traditional Linux Scheduler
 
 Cron is a classic scheduling tool in Linux that allows commands and
 scripts to be executed automatically at specified times and intervals.
