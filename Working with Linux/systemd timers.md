@@ -4,7 +4,7 @@ Systemd timers are the modern replacement for cron and provide a more
 powerful, reliable and fully integrated scheduling system on Linux.
 
 ------------------------------------------------------------------------
-
+ 
 ## 1. What Are systemd Timers?
 
 A systemd timer is a scheduling unit that defines when a corresponding

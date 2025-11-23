@@ -5,7 +5,7 @@ and how keys, known hosts and encrypted tunnels all fit together. It is
 written as a foundational Linux and DevOps learning resource.
 
 ## 1. What Is OpenSSH?
-
+ 
 OpenSSH is a secure method of remotely accessing a Linux endpoint. It
 enables encrypted communication between a client and a server,
 protecting data from interception, tampering or eavesdropping.

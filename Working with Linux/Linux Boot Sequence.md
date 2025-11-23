@@ -6,7 +6,7 @@ Understanding this flow is essential for systems administration,
 troubleshooting and DevOps engineering.
 
 ------------------------------------------------------------------------
-
+ 
 ## Stage 1: BIOS / UEFI
 
 ### Power-On
