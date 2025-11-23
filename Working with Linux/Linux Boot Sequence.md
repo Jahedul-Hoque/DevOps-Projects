@@ -1,4 +1,4 @@
-# Linux Boot Sequence - Full Breakdown
+# Linux Boot Sequence
 
 This document explains the full Linux boot process from the moment a
 machine powers on to when the user reaches the login prompt.
