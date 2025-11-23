@@ -11,3 +11,11 @@ You can typically find them on the .shh directory of the SSH Client you're remot
 
 SSH have encrypted tunnels that allow for a secure connection between 2 endpoints.
 SSH Connection is typically sat on port 22
+
+Known host files are also stored on the .ssh folder for an extra layer of security.
+Known host files contain 3 values per entry.
+Hostname/IP Address, KeyType, Host Key
+
+Before remoting onto a machime, the SSH service looks into the known hostfile to verify if the signature of the machine is currently on there. If it isnt, then it outputs that the signature is unknown and confirms with the user if they want to remote in.
+After remoting in, it adds the new signature onto the known host file.
+This can add an extra layer of security incase there's an interception between 2 endpoints or a "middle man".
