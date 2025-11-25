@@ -1,4 +1,4 @@
-# DevOps-Projects   
+# DevOps-Projects         
 A collection of hands-on projects that demonstrate my work with Docker, Kubernetes and general DevOps practices.
 
 ## About  
