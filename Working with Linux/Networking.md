@@ -18,8 +18,8 @@ layered method:
 
     ip link
 
-Checks whether: - Interface is up\
-- NIC is detected\
+Checks whether: - Interface is up
+- NIC is detected
 - Cable/physical signal exists
 
 ------------------------------------------------------------------------
@@ -30,8 +30,8 @@ Checks whether: - Interface is up\
 
     ip addr
 
-Checks whether: - IP address exists\
-- DHCP assigned correctly\
+Checks whether: - IP address exists
+- DHCP assigned correctly
 - MAC address is correct
 
 If DHCP failed → no IP address.
@@ -45,8 +45,8 @@ If DHCP failed → no IP address.
     ip route
     traceroute <IP>
 
-Checks: - Correct default gateway\
-- Whether gateway is reachable\
+Checks: - Correct default gateway
+- Whether gateway is reachable
 - Whether packets leave LAN
 
 If you can reach LAN but not outside → routing problem.
@@ -59,7 +59,7 @@ If you can reach LAN but not outside → routing problem.
 
     ping <IP>
 
-If ping fails on IP → not DNS, problem is network-level.\
+If ping fails on IP → not DNS, problem is network-level.
 If ping works on IP but not hostname → DNS issue.
 
 ------------------------------------------------------------------------
@@ -71,8 +71,8 @@ If ping works on IP but not hostname → DNS issue.
     dig google.com
     nslookup google.com
 
-Checks: - Can hostnames resolve?\
-- Are DNS servers correct?\
+Checks: - Can hostnames resolve?
+- Are DNS servers correct?
 - Is systemd-resolved functioning?
 
 ------------------------------------------------------------------------
@@ -85,15 +85,15 @@ Checks: - Can hostnames resolve?\
 
 ### Meaning of flags:
 
--   ss → socket statistics\
--   t → TCP\
--   u → UDP\
--   l → listening sockets\
--   p → show processes\
+-   ss → socket statistics
+-   t → TCP
+-   u → UDP
+-   l → listening sockets
+-   p → show processes
 -   n → numeric output
 
-Checks: - Is the service listening?\
-- Is the correct port open?\
+Checks: - Is the service listening?
+- Is the correct port open?
 - Is another program using the port?
 
 ------------------------------------------------------------------------
@@ -104,10 +104,10 @@ Checks: - Is the service listening?\
 
     journalctl -u NetworkManager
 
-Checks failures related to: - DHCP\
-- Drivers\
-- VLAN\
-- Wi-Fi\
+Checks failures related to: - DHCP
+- Drivers
+- VLAN
+- Wi-Fi
 - Interface initialization
 
 ------------------------------------------------------------------------
@@ -116,9 +116,9 @@ Checks failures related to: - DHCP\
 
 ### When to use:
 
--   External addresses cannot be reached\
--   Identify routing loops\
--   Diagnose firewall blocks\
+-   External addresses cannot be reached
+-   Identify routing loops
+-   Diagnose firewall blocks
 -   Trace slow upstream hops
 
 ------------------------------------------------------------------------
@@ -129,8 +129,8 @@ Checks failures related to: - DHCP\
 
 ### What it tells you:
 
--   Whether packets hit the NIC\
--   DNS queries and responses\
+-   Whether packets hit the NIC
+-   DNS queries and responses
 -   If an issue is internal or external
 
 Example: If you see DNS queries but no responses → firewall or DNS
@@ -142,7 +142,7 @@ server issue.
 
 systemd-resolved manages DNS configuration and resolution per interface.
 
-Useful for: - Checking which DNS servers are being used\
+Useful for: - Checking which DNS servers are being used
 - Debugging DNS failures
 
 Commands:
@@ -158,21 +158,21 @@ Both perform DNS lookups.
 
 ### DIG:
 
--   More detailed\
+-   More detailed
 -   Preferred for troubleshooting
 
 ### NSLookup:
 
--   Quick and simple\
+-   Quick and simple
 -   Works on Windows and Linux
 
 ------------------------------------------------------------------------
 
 ## Summary
 
--   Use `ip link`, `ip addr`, `ip route` for low-level diagnostics.\
--   Use `ss -tulpn` to inspect listening services.\
--   Use traceroute for upstream routing issues.\
--   Use tcpdump for packet inspection.\
--   Use dig/nslookup + systemd-resolved for DNS problems.\
+-   Use `ip link`, `ip addr`, `ip route` for low-level diagnostics.
+-   Use `ss -tulpn` to inspect listening services.
+-   Use traceroute for upstream routing issues.
+-   Use tcpdump for packet inspection.
+-   Use dig/nslookup + systemd-resolved for DNS problems.
 -   Use journalctl for service-level debugging.
