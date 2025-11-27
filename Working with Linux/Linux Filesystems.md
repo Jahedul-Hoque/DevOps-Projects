@@ -45,31 +45,31 @@ This is the modern replacement for reading `/proc/mounts`.
 
 ### NFS -- Network File System
 
--   Linux-native network filesystem\
--   Server exports directory → client mounts it\
+-   Linux-native network filesystem
+-   Server exports directory → client mounts it
 -   Common in shared team environments (e.g., shared home directories)
 
 ### SMB/CIFS
 
--   Windows file sharing protocol\
--   Linux mounts SMB via CIFS\
--   Ideal for mixed Windows/Linux office environments\
+-   Windows file sharing protocol
+-   Linux mounts SMB via CIFS
+-   Ideal for mixed Windows/Linux office environments
 -   Integrates with Active Directory
 
 ### Bind Mounts
 
--   Makes one directory appear at another location\
+-   Makes one directory appear at another location
 -   Useful for containers, chroot environments, or reorganising folders
 
 ### EXT4
 
--   Common default Linux filesystem\
--   Reliable, fast and simple\
+-   Common default Linux filesystem
+-   Reliable, fast and simple
 -   Good general-purpose filesystem
 
 ### XFS
 
--   High-performance filesystem (default in RHEL)\
+-   High-performance filesystem (default in RHEL)
 -   Excellent for large files, scalability and throughput
 
 ### Btrfs
@@ -82,14 +82,14 @@ This is the modern replacement for reading `/proc/mounts`.
 
 ### VFAT
 
--   Used on USB drives and EFI partitions\
--   No journaling\
+-   Used on USB drives and EFI partitions
+-   No journaling
 -   Compatible with Windows/macOS
 
 ### tmpfs
 
--   Temporary in-memory filesystem\
--   Very fast\
+-   Temporary in-memory filesystem
+-   Very fast
 -   Used for `/run`, `/tmp` and caching
 
 ------------------------------------------------------------------------
@@ -110,7 +110,7 @@ Meaning: - Owner: `rwx` - Group: `r-x` - Others: `-w-`
 
     chown user1:group1 file.txt
 
-Meaning: - `user1` is now the owner\
+Meaning: - `user1` is now the owner
 - `group1` is now the assigned group
 
 ------------------------------------------------------------------------
@@ -140,9 +140,9 @@ owner/group/other.
 
 ## Summary
 
--   Filesystems store data, metadata and inodes.\
--   `df -h` shows storage usage; `findmnt` shows mounts.\
+-   Filesystems store data, metadata and inodes.
+-   `df -h` shows storage usage; `findmnt` shows mounts.
 -   Linux supports many filesystems: NFS, SMB, EXT4, XFS, Btrfs, tmpfs,
-    etc.\
--   Use `chmod` and `chown` for classic permissions.\
+    etc.
+-   Use `chmod` and `chown` for classic permissions.
 -   Use ACLs for more detailed access control.
