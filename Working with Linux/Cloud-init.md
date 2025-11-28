@@ -81,9 +81,13 @@ All without manually accessing the VM.
 OpenStack provisions VMs using a metadata service that cloud-init reads
 on first boot.
 
-Process: 1. OpenStack exposes metadata to the VM on 169.254.169.254
+Process: 
+
+1. OpenStack exposes metadata to the VM on 169.254.169.254
+
 2. Cloud-init retrieves user-data, SSH keys, hostnames and network
 configs
+
 3. Cloud-init configures the VM entirely: - Creates user accounts
 - Injects SSH keys
 - Configures networking
