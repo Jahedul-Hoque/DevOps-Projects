@@ -15,9 +15,16 @@ and others.
 Cloud-init automatically configures a Linux virtual machine on its first
 boot.
 
-It can configure: - Users - SSH keys - Packages - Network settings -
-Hostname - Filesystems and mounts - Writing files - Running scripts and
-commands
+It can configure: 
+
+- Users
+- SSH keys 
+- Packages 
+- Network settings 
+- Hostname  
+- Filesystems
+- Writing files 
+- Running scripts and commands
 
 This allows consistent, reproducible VM deployments with no manual
 steps.
@@ -28,12 +35,15 @@ steps.
 
 ### Step 1: Metadata Service Detection
 
-When a VM boots, it queries a metadata service, usually located at:
+When a VM boots, it queries a metadata service, usually located at 169.254.169.254
 
-    169.254.169.254
+The metadata service provides: 
 
-The metadata service provides: - Instance ID - Hostname - User-data
-(cloud-init YAML) - SSH keys - Networking configuration
+- Instance ID 
+- Hostname 
+- User-data (cloud-init YAML) 
+- SSH keys 
+- Networking configuration
 
 ### Step 2: Retrieve Configuration
 
@@ -66,17 +76,7 @@ After this, the VM is fully configured automatically.
 
 ------------------------------------------------------------------------
 
-## 3. What a Cloud-Init YAML Can Do
-
-A single YAML file can perform: - Hostname configuration - Creating
-users and groups - Installing SSH keys - Installing packages - Running
-commands or scripts - Writing configuration files - Mounting disks
-
-All without manually accessing the VM.
-
-------------------------------------------------------------------------
-
-## 4. How OpenStack Uses Cloud-Init
+## 3. How OpenStack Uses Cloud-Init
 
 OpenStack provisions VMs using a metadata service that cloud-init reads
 on first boot.
@@ -88,16 +88,20 @@ Process:
 2. Cloud-init retrieves user-data, SSH keys, hostnames and network
 configs
 
-3. Cloud-init configures the VM entirely: - Creates user accounts
+3. Cloud-init configures the VM entirely: 
+- Creates user accounts
 - Injects SSH keys
 - Configures networking
 - Sets hostname
 - Mounts filesystems
 - Installs packages
 - Runs bootstrap scripts
+
 4. VM becomes fully ready for use
 
-This eliminates issues like: - Missing hostnames
+This eliminates issues like: 
+
+- Missing hostnames
 - No SSH access after provisioning
 - Inconsistent VM configurations
 
