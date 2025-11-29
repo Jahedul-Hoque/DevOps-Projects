@@ -25,7 +25,7 @@ precise timestamps that make troubleshooting significantly easier.
     -   Real-time streaming
 
 This makes journald far more capable than traditional plain-text logging
-systems.
+systems. 
 
 ------------------------------------------------------------------------
 
