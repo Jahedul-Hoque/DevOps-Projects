@@ -1,5 +1,5 @@
 # Cloud-Init -- Automated Linux Configuration on First Boot
- 
+  
 Cloud-init is the industry-standard tool used by cloud platforms to
 automatically configure Linux virtual machines on their first boot. It
 enables full automation of users, SSH keys, packages, networking,
