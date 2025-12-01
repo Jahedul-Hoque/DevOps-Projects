@@ -4,7 +4,7 @@ Cloud-init is the industry-standard tool used by cloud platforms to
 automatically configure Linux virtual machines on their first boot. It
 enables full automation of users, SSH keys, packages, networking,
 scripts and more using a YAML configuration file.
-
+  
 Cloud-init is essential in environments such as OpenStack, AWS, Azure
 and others.
 
